@@ -1,0 +1,38 @@
+ALGORITHM leng_of_sentance
+VAR
+    str: STRING : ="the word space development";
+    count: INTEGER :=0;
+BEGIN
+    FOR (int i=0 , i< str.lenght(); i:=++) DO
+       IF (str.charAt[i]!=" ") THEN
+        count++;
+       END_IF
+    END_FOR
+    write(count)
+END
+ALGORITHM nb_words_sentance
+VAR
+     str: STRING : ="the word space development";
+    count: INTEGER :=1;
+BEGIN
+    FOR i in str DO
+     IF (i ==" ") THEN
+     count +=1
+     END_IF  
+
+    END_FOR
+     write(count)
+END
+ALGORITHM nb_voiel_sentance
+VAR
+      str: STRING : ="the word space development";
+    count: INTEGER :=0;
+    voiels : char := ["a","e","i","o","u","y"];
+BEGIN
+    for i in str do
+    IF i in voiels THEN
+        count++;
+    END_IF
+    END_FOR
+     write(count)
+END
